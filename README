@@ -1,0 +1,18 @@
+Created for the event Hackalong
+Created by Oscar Koeroo, on behalf of KPN NL
+
+
+This is a demo of:
+- How to build RADIUS
+- How to patch it with WPE
+- How to install it for testing purposes
+- How to config it for testing purposes
+- How to run it for testing purposes
+
+The expected outcome is:
+- Learning more about 802.1x and WPA2-Enterprise and its security model
+- Learning that checking the certificate of the peer is important.
+- How you could loose your credentials quickly if you don't check the parameters
+- How to crack MSCHAPv2 and friends with asleap
+
+
